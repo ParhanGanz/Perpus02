@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 02, 2026 at 08:24 PM
+-- Generation Time: Jun 04, 2026 at 03:48 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -148,7 +148,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id_user`, `nama_lengkap`, `username`, `password`, `role`) VALUES
-(1, 'Administrator', 'admin', '$2y$10$Vd/ulQURT7VajSN6Si0YueyjINdo1WccUTD8Cm6NxuN0Kj7CsT6B', 'admin');
+(1, 'Administrator', 'admin', '$2y$10$Vd/ulQURT7VajSN6Si0YueyjINdo1WccUTD8Cm6NxuN0Kj7CsT6B', 'admin'),
+(2, 'Sultan', 'sultan', '$2y$10$3Gby7g8jDYRWTLDgGHquve0UVAQZWzj.uTy205TifVCLVH893pD2u', 'admin');
 
 --
 -- Indexes for dumped tables
@@ -233,7 +234,7 @@ ALTER TABLE `peminjaman`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
